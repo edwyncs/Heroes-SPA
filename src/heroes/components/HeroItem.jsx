@@ -1,14 +1,14 @@
 import { Link } from "react-router-dom";
 
 export const HeroItem = ({id, superhero, publisher, alter_ego, first_appearance, characters, search}) => {
-    const heroImageUrl = `/assets/heroes/${ id }.jpg`;
+    const heroImageUrl = `./assets/heroes/${ id }.jpg`;
   return (
-    <div className={`col-12 col-sm-6 col-xl-4 col-lg-4 d-flex flex-wrap animate__animated animate__fadeIn ${search && 'flex-fill'}`}>
+    <div className={`col-12 col-sm-6 col-xl-4 col-lg-4 d-flex flex-wrap animate__animated animate__fadeIn ${search && 'flex'}`}>
 
         <div className="card mb-5 rounded-3">
             <div className="row g-0 h-100 justify-content-center justify-content-sm-center justify-content-md-start">
 
-                <div className="card-image col-10 col-sm-10 col-md-5 align-self-center ">
+                <div className="card-image col-10 col-sm-10 col-md-5 align-self-center">
                     <img src={heroImageUrl} alt={superhero} className="img img-raised img-fluid rounded-3" />
                 </div>
                 <div className="col-md-6">
